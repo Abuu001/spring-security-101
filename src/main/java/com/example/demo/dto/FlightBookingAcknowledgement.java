@@ -1,2 +1,20 @@
-package com.example.demo.dto;public class FlightBookingAcknowledgement {
+package com.example.demo.dto;
+
+import com.example.demo.Entity.PassengerInfo;
+import com.example.demo.Entity.PaymentInfo;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FlightBookingAcknowledgement {
+
+    private String status;
+    private double totalFare;
+    private String pnrNo;
+    private PassengerInfo passengerInfo;
+
 }
