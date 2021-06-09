@@ -21,8 +21,9 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long employeeId;
 
-    @Column(name = "employee_name")
+    @Column(name = "employee_name",nullable = false)
     private String empName;
+    @Column(unique = true)
     private String email;
 
     @Autowired
