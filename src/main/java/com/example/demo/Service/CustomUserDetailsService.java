@@ -2,6 +2,7 @@ package com.example.demo.Service;
 
 import com.example.demo.Entity.User;
 import com.example.demo.Repository.UserRepository;
+import com.example.demo.Security.CustomUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -22,6 +23,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         if(user ==null){
             throw  new UsernameNotFoundException("User Name not Found!!");
         }
-        return null;
+        return new CustomUserDetails(user);
     }
 }
