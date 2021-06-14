@@ -1,2 +1,10 @@
-package com.example.demo.dto;public class UserRequest {
+package com.example.demo.dto;
+
+import lombok.Data;
+
+@Data
+public class UserRequest {
+
+    private String username;
+    private String password;
 }
