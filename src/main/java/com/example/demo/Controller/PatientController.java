@@ -27,8 +27,5 @@ public class PatientController {
                 .orElseThrow(()->new IllegalStateException("Patient " + patientId + " doesn't exist"));
     }
 
- /*   @GetMapping("/all")
-    public Patient getAllPatients(){
 
-    }*/
 }
