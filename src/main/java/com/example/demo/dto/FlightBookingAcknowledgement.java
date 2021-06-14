@@ -1,11 +1,9 @@
 package com.example.demo.dto;
 
 import com.example.demo.Entity.PassengerInfo;
-import com.example.demo.Entity.PaymentInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 
 @Data
 @AllArgsConstructor
@@ -16,5 +14,4 @@ public class FlightBookingAcknowledgement {
     private double totalFare;
     private String pnrNo;
     private PassengerInfo passengerInfo;
-
 }
