@@ -6,6 +6,8 @@ server:
 spring:
   profiles:
     active: dev
+  application:
+    name: DEPARTMENT-SERVICE
 
 #to include all our endpoints in the actuator
 management:
@@ -30,6 +32,14 @@ spring:
         format_sql: true
     show-sql: true
 
+  eureka:
+    client:
+      registry-with-eureka: true
+      fetch-registry: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+      instance:
+        hostname: localhost
 
 
 
