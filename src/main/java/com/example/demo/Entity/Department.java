@@ -15,9 +15,12 @@ public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Long departmentId;
     private String departmentName;
 
     @Column(name = "dep_code")
-    private String getDepartmentCode;
+    private String departmentCode;
+
+    private String departmentAddress;
 }
