@@ -16,10 +16,10 @@ import static org.mockito.Mockito.when;
 class BusinessImplMockTest {
 
     @InjectMocks
-    BusinessImpl business; //OR   BusinessImpl business = new BusinessImpl();
+    private BusinessImpl business; //OR   BusinessImpl business = new BusinessImpl();
 
     @Mock
-    DataService dataServiceMock;   //OR  DataService dataServiceMock = mock(DataService.class);
+    private DataService dataServiceMock;   //OR  DataService dataServiceMock = mock(DataService.class);
 
     @Test
     void calculateSumUsingDataService() {
