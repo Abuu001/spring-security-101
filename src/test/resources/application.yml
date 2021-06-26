@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: test
+
+#to include all our endpoints in the actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+
