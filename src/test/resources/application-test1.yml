@@ -1,0 +1,20 @@
+spring:
+  profiles: test1
+  datasource:
+    password: Abuu001
+    url: jdbc:h2://mem:testdb;DB_CLOSE_DELAY=-1
+    username: Abuu001
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+server:
+  error:
+    include-message: always
+  port: 3002
