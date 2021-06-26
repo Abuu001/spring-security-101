@@ -32,6 +32,7 @@ spring:
         format_sql: true
     show-sql: true
 
+
   eureka:
     client:
       registry-with-eureka: true
@@ -41,5 +42,23 @@ spring:
       instance:
         hostname: localhost
 
+---
 
-
+spring:
+  profiles: test
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: Abuu001
+    password: Abuu001
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
